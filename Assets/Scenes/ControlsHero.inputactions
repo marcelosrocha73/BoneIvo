@@ -1,0 +1,90 @@
+{
+    "name": "ControlsHero",
+    "maps": [
+        {
+            "name": "ControlleMoveHero",
+            "id": "febbc7fa-1d41-407b-8585-046564c5ef31",
+            "actions": [
+                {
+                    "name": "Move-Teclado",
+                    "type": "Value",
+                    "id": "86c1377d-a41d-454c-8e6b-293b00f5ecc8",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "2D Vector",
+                    "id": "418a3ce6-9ea7-4657-a940-4633fafdc2d6",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move-Teclado",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "5e62251b-717b-446e-a55e-01a903a8c06a",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MoveHero",
+                    "action": "Move-Teclado",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "c53348ad-eb5e-47fa-8ae8-9191590f1667",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MoveHero",
+                    "action": "Move-Teclado",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "edc4417f-07cc-4ec5-99f4-d2d633109848",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MoveHero",
+                    "action": "Move-Teclado",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "626643a6-78f9-42f2-8a97-0a95f7f7d932",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MoveHero",
+                    "action": "Move-Teclado",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "MoveHero",
+            "bindingGroup": "MoveHero",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
